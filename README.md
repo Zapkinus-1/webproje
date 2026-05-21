@@ -1,19 +1,31 @@
-# Web Teknolojileri ve Programlama Ödevi
+# Kişisel Web Sayfası ve Docker Projesi
 
-Bu proje, Dockerize edilmiş basit ve modern bir kişisel web sayfasıdır. Proje kapsamında HTML, CSS ve Docker teknolojileri kullanılmıştır.
+## Proje Açıklaması
+Bu proje, Bulut Bilişim dersi ödevi kapsamında geliştirilmiş; Docker container mantığını, temel web teknolojilerini ve GitHub sürüm kontrol sistemini uygulamalı olarak anlamayı amaçlayan basit bir kişisel web sayfasıdır.
 
-## Proje İçeriği
-* **index.html**: Kişisel bilgilerin, iletişim kanallarının ve sosyal medya hesaplarının yer aldığı ana sayfa.
-* **style.css**: Sayfanın modern ve duyarlı (responsive) tasarımını sağlayan stil dosyası.
-* **Dockerfile**: Projenin Nginx sunucusu üzerinde Dockerize edilmesini sağlayan yapılandırma dosyası.
+## Öğrenci Bilgileri
+* **Adı Soyadı:** Yusuf Eren Kaya
+* **Bölüm / Program:** Bilgisayar Programcılığı
+
+## Kullanılan Teknolojiler
+* HTML5 & CSS3
+* Docker & Nginx
+* GitHub & GitHub Pages
 
 ---
 
-## Kurulum ve Çalıştırma Adımları
+## Docker Çalıştırma Komutları
 
-Projeyi yerel bilgisayarınızda Docker container üzerinde çalıştırmak için aşağıdaki komutları sırasıyla terminal veya PowerShell üzerinden uygulayabilirsiniz:
+Proje dizininde terminali açarak aşağıdaki komutları sırasıyla çalıştırabilirsiniz:
 
-### 1. Docker Image Oluşturma
-Proje dizininin içerisindeyken projenin Docker imajını derlemek için şu komutu çalıştırın:
-```bash
-docker build -t webproje .
+### 1. Docker Image Oluşturma:
+
+    docker build -t webproje .
+
+### 2. Docker Container Çalıştırma:
+
+    docker run -d -p 8080:80 webproje
+
+### 3. Tarayıcı Erişimi:
+
+    http://localhost:8080
