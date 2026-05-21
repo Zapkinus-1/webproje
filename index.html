@@ -3,22 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yusuf Eren Kaya - Kişisel Web Sayfası</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Yusuf Eren Kaya - Profil Sayfası</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .avatar-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .avatar-text {
+            color: white;
+            font-size: 42px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            color: #333333;
+            font-size: 26px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .title {
+            color: #667eea;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .university {
+            color: #666666;
+            font-size: 15px;
+            margin-bottom: 25px;
+            background: #f4f6f9;
+            padding: 8px 12px;
+            border-radius: 30px;
+            display: inline-block;
+        }
+
+        .info-section {
+            border-top: 1px solid #eeeeee;
+            padding-top: 20px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            color: #555555;
+            font-size: 15px;
+        }
+
+        .info-item strong {
+            width: 80px;
+            color: #333333;
+        }
+
+        .btn {
+            display: block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #5a73e8, #6c4099);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+    </style>
 </head>
 <body>
+
     <div class="card">
+        <div class="avatar-container">
+            <span class="avatar-text">YEK</span>
+        </div>
+        
         <h1>Yusuf Eren Kaya</h1>
-        <p class="subtitle">Bilgisayar Programcılığı Öğrencisi</p>
-        <p class="university">Pamukkale Üniversitesi</p>
-        <hr>
-        <div class="info">
-            <p><strong>İletişim:</strong> yusuferenkaya@example.com</p>
-            <p><strong>Konum:</strong> Denizli / Türkiye</p>
+        <div class="title">Bilgisayar Programcılığı Öğrencisi</div>
+        <div class="university">Pamukkale Üniversitesi</div>
+
+        <div class="info-section">
+            <div class="info-item">
+                <strong>E-posta:</strong> <span>ykaya251@posta.pau.edu.tr</span>
+            </div>
+            <div class="info-item">
+                <strong>Konum:</strong> <span>Denizli / Türkiye</span>
+            </div>
         </div>
-        <div class="links">
-            <a href="https://github.com/yusuferenkaya" target="_blank">GitHub Profilim</a>
-        </div>
+
+        <a href="https://github.com/zapkinus-1/webproje" target="_blank" class="btn">GitHub Profilim</a>
     </div>
+
 </body>
 </html>
